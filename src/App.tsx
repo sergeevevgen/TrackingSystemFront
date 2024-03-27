@@ -1,19 +1,34 @@
 import React from "react";
-// import { Fetcher } from "./components/Fetcher";
-// import { Button } from "./components/Button";
-// import { Provider } from "react-redux";
-// import { store } from "./store";
 import { Home } from "@components/Home";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { Timetable } from "@components/Timetable";
+import { Header } from "@components/Header";
+import { Container } from 'react-bootstrap';
+import { links } from "@type/links";
 
-const App = () => {
+const App: React.FunctionComponent = () => {
     return (
-        // <Provider store={store}>
-        //     <Fetcher node={<Button title='Click me ' count={5} />}/>
-        // </Provider>   
-        <Routes>
-            <Route path="/" element={<Home />}></Route>
-        </Routes>   
+        <>
+            {/* Хедер + Роуты */}
+            <Header />
+
+            <Routes>
+                {/* {links.map((item, index) => (
+                    <Route path={item.link} element={<Home />}/>
+                ))} */}
+                <Route path="*" element={<Home />} />
+                <Route path="/timetable" element={<Timetable />} />
+                <Route path="/qr" element={null} />
+                <Route path="/help" element={null} />
+                <Route path="/todo" element={null} />
+            </Routes>
+            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                Контент
+                Контент
+                Контент
+            </Container>
+            {/* <Footer /> */}
+        </>
     );
 };
 

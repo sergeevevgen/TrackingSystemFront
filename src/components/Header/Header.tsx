@@ -1,29 +1,26 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom';
-import { Props } from '@type/common';
-import { Link } from '@type/common';
-import React from 'react';
+import React from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { links } from "@type/links";
 
-export const Header: React.FunctionComponent<Props> = (props) => {
-    const [navs] = useState<Link[]>(links)
+export const Header: React.FunctionComponent = () => {
 
     return (
-          <>
-              <div>
-                  <h1 className='h1'>{props.title}</h1>
-              </div>
-              <ul className='flex justify-center items-center gap-8'>
-                  {navs.map((nav, index) => (
-                      <li key={index} className='li'>
-                          <NavLink
-                              to={nav.link}
-                              className='navs'>
-                              {nav.title}
-                          </NavLink>
-                      </li>
-                  ))}
-              </ul>
-          </>
+        <>
+            <Navbar sticky="top" expand="md" className="bg-body-tertiary">
+            <Container fluid>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav>
+                    {links.map((item, index) => (
+                        <Nav.Item key={index}>
+                            <Link to={item.link} className="nav-link">{item.title}</Link>
+                        </Nav.Item>
+                    ))}
+                </Nav>
+                </Navbar.Collapse>
+            </Container>
+            </Navbar>
+        </>
     );
 }

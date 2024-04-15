@@ -11,6 +11,7 @@ export type Props = {
 }
 
 export type Link = {
-    title: string,
-    link: string
+    title: string;
+    link: string;
+    element: React.ReactNode;
 }

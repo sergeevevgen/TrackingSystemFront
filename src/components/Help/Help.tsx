@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-export const Timetable: React.FunctionComponent = () => {
+export const Help: React.FunctionComponent = () => {
     return (
         <div>
-            Table
+            Help
         </div>
     );
 }

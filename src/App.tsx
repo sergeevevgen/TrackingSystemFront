@@ -11,7 +11,7 @@ export const App: React.FunctionComponent = () => {
 
             
 
-            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+            <Container className="py-4" style={{ height: '100vh'}}>
                 <Router />
             </Container>
             {/* <Footer /> */}

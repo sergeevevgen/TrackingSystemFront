@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Header } from '@components/Header'
+import { Slider } from '@components/Slider';
 
 export const Home: React.FunctionComponent = () => {
     return (
         <div>
-            Home
+            <Slider />
         </div>
     );
 }

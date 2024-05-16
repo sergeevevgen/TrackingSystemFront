@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Button, InputGroup, Form } from 'react-bootstrap';
+import { Scanner } from '@yudiel/react-qr-scanner';
+import './index.css';
 
 export const Qr: React.FunctionComponent = () => {
     const [qrCode, setQrCode] = useState("");
@@ -7,6 +9,7 @@ export const Qr: React.FunctionComponent = () => {
     const [word, setWord] = useState("");
     const [size, setSize] = useState(300);
     const [bgColor, setBgColor] = useState("ffffff");
+    const [value, setValue] = useState("");
 
     useEffect(() => {
         setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${size}x${size}&bgcolor=${bgColor}`);
@@ -51,7 +54,8 @@ export const Qr: React.FunctionComponent = () => {
                 /> */}
 
                 {/* <h5>Dimension:</h5>
-                <input type="range" min="200" max="600" value={size} onChange={(e) => { setSize(Number(e.target.value)) }} /> */}
+                <input type="range" min="200" max="600" value={size} onChange={(e) => { setSize(Number(e.target.value)) }} />
+             */}
             </div>
 
             <div>
@@ -67,6 +71,11 @@ export const Qr: React.FunctionComponent = () => {
                         Скачать
                     </Button>
                 </a>
+            </div>
+
+            <div className="qr-wrapper">
+                <Scanner onResult={setValue} />
+                <h1>{value?.toString()}</h1>
             </div>
 
 

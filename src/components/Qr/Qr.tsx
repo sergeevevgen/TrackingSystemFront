@@ -25,7 +25,7 @@ export const Qr: React.FunctionComponent = () => {
             <div>
                 <InputGroup className="mb-3">
                     <Form.Control
-                        placeholder="URL-адрес"
+                        placeholder="Начните вводить занятие"
                         type="text"
                         onChange={(e) => { setTemp(e.target.value) }}
                     />
@@ -33,7 +33,7 @@ export const Qr: React.FunctionComponent = () => {
                         variant="outline-secondary"
                         onClick={handleClick}
                     >
-                        Генерация
+                        Сгенерировать QR-код
                     </Button>
                 </InputGroup>
 
@@ -73,13 +73,19 @@ export const Qr: React.FunctionComponent = () => {
                 </a>
             </div>
 
-            <div className="qr-wrapper">
-                <Scanner onResult={setValue} />
-                <h1>{value?.toString()}</h1>
+            <div>
+                <Button
+                    type="button"
+                    className="btn-secondary"
+                >
+                    Подтверждать отметку через тг-бота
+                </Button>
             </div>
 
-
-
+            {/* <div className="qr-wrapper">
+                <Scanner onResult={setValue} />
+                <h1>{value?.toString()}</h1>
+            </div> */}
         </Container>
     );
 }

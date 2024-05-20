@@ -42,6 +42,7 @@
     "bootstrap": "^5.3.3",
     "css-loader": "^6.10.0",
     "dotenv": "^16.4.5",
+    "html5-qrcode": "^2.3.8",
     "husky": "^9.0.11",
     "qrcode": "^1.5.3",
     "react": "^18.2.0",

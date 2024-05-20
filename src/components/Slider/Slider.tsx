@@ -22,25 +22,25 @@ export const Slider: React.FunctionComponent = () => {
             >
                 <SwiperSlide className="slide-wrapper">
                     <div className="card custom-card">
-                        <img src={"https://plus.unsplash.com/premium_photo-1714229505201-072ef1c6edcd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} className="card-img-top card-image" alt="Slide 1" />
+                        <img src={"https://ulstu.ru/upload/iblock/b88/7l4q16sys0lwzqtjoxvpiys9i9oh9ryt/Frame_88.png"} className="card-img-top card-image" alt="Slide 1" />
                         <div className="card-body">
-                            <h5 className="card-title">Slide 1</h5>
+                            <h5 className="card-title"></h5>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-wrapper">
                     <div className="card custom-card">
-                        <img src={"https://images.unsplash.com/photo-1715645961085-b3c21251a061?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} className="card-img-top card-image" alt="Slide 2" />
+                        <img src={"https://ulstu.ru/upload/iblock/a4a/7w17n75rgek6wj9i2phziifdyb63agl8/image_265.png"} className="card-img-top card-image" alt="Slide 2" />
                         <div className="card-body">
-                            <h5 className="card-title">Slide 2</h5>
+                            <h5 className="card-title"></h5>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-wrapper">
                     <div className="card custom-card">
-                        <img src={"https://plus.unsplash.com/premium_photo-1708633003240-569a6135deaa?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} className="card-img-top card-image" alt="Slide 3" />
+                        <img src={"https://ulstu.ru/upload/iblock/c3d/f939qhzlz7p256i6p7dnk96ywfk0f1nw/Frame_42.png"} className="card-img-top card-image" alt="Slide 3" />
                         <div className="card-body">
-                            <h5 className="card-title">Slide 3</h5>
+                            <h5 className="card-title"></h5>
                         </div>
                     </div>
                 </SwiperSlide>

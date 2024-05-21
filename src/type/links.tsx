@@ -4,6 +4,7 @@ import { Qr } from '@components/Qr';
 import { Timetable } from '@components/Timetable';
 import { Link } from '@type/common';
 import { QRScanner } from '@components/QRScanner';
+import { Profile } from '@components/Profile';
 import React from 'react';
 
 
@@ -44,6 +45,6 @@ export const links: Link[] = [
     {
         title: 'Профиль',
         link: '/todo',
-        element: null
+        element: <Profile />
     },
 ];
